@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Usuários</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Gestão de Usuários</h1>
+
+    <a href="index.html"><button type="button">Produtos</button></a>
+
+    <section id="user-section">
+        <h2>Registrar Usuário</h2>
+        <form id="user-form">
+            <input type="text" id="nome-usuario" placeholder="Nome do Usuário" required>
+            <input type="email" id="email-usuario" placeholder="Email do Usuário" required>
+            <input type="password" id="senha-usuario" placeholder="Senha" required>
+            <button type="submit">Registrar Usuário</button>
+        </form>
+
+        <h2>Lista de Usuários</h2>
+        <ul id="user-list"></ul>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

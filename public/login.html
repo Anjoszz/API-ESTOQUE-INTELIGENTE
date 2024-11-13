@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="login-form">
+        <input type="email" id="email-login" placeholder="Email" required>
+        <input type="password" id="senha-login" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Botão para redirecionar para a página de registro -->
+    <p>Não tem uma conta? <a href="register.html"><button type="button">Cadastre-se</button></a></p>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', event => {
+            event.preventDefault();
+
+            const email = document.getElementById('email-login').value;
+            const senha = document.getElementById('senha-login').value;
+
+            fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, senha })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === 'Usuário logado com sucesso') {
+                    alert(data.message);
+                    window.location.href = '/index.html';
+                } else {
+                    alert('Credenciais inválidas.');
+                }
+            })
+            .catch(err => console.error('Erro ao fazer login:', err));
+        });
+    </script>
+</body>
+</html>

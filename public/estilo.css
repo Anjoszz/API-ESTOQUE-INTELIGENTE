@@ -1,0 +1,154 @@
+/* Resetando algumas propriedades padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Botões */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a button {
+    background-color: #28a745;
+    color: white;
+}
+
+a button:hover {
+    background-color: #218838;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+}
+
+section#product-section, section#user-section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Página de Auditoria */
+#auditoria-section {
+    margin-top: 20px;
+}
+
+#auditoria-list li {
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#auditoria-list li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Página de Login */
+#login-form input {
+    margin-bottom: 15px;
+}
+
+/* Estilo para o rodapé e links de navegação */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Adicionando um pequeno espaçamento entre os elementos para garantir uma boa leitura */
+body {
+    padding: 20px;
+}
+
+button[type="button"] {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1em;
+}

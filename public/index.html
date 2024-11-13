@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Produtos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Gestão de Produtos</h1>
+
+    <a href="usuarios.html"><button type="button">Usuários</button></a>
+    
+    <!-- Botão para acessar a auditoria -->
+    <a href="auditoria.html"><button type="button">Ver Auditoria</button></a>
+
+    <section id="product-section">
+        <h2>Cadastrar Produto</h2>
+        <form id="product-form">
+            <input type="text" id="nome-produto" placeholder="Nome do Produto" required>
+            <input type="text" id="descricao-produto" placeholder="Descrição do Produto" required>
+            <input type="number" id="preco-produto" placeholder="Preço do Produto" required>
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+
+        <h2>Lista de Produtos</h2>
+        <ul id="product-list"></ul>
+
+        <!-- Exibir total -->
+        <h3>Total de Produtos: R$<span id="total-price">0.00</span></h3>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
